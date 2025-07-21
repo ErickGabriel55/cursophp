@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionais</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
 </head>
 <body>
-    <h1>Praticando um pouco mais</h1>
+    <h1>Condições Encadea das!</h1>
     <?php 
         /*<?= ?>*/
         /* desconto pra quem possuir o cartão da loja e tiver comprando algo acima de R$100,00*/
         $usuario_possui_cartao_loja = true;
-        $valor_compra = 255;
+        $valor_compra = 250;
         $valor_frete = 50;
-        $recebeu_desconto_frete = false;
+        $recebeu_desconto_frete = true;
 
-        if($usuario_possui_cartao_loja && $valor_compra >= 100){
+        // Inicio das condicionais
+        if($usuario_possui_cartao_loja && $valor_compra >= 400){
             $valor_frete = 0;
-            $recebeu_desconto_frete = true;
+        } else if($usuario_possui_cartao_loja && $valor_compra >= 300){
+            $valor_frete = 10;
+        } else if($usuario_possui_cartao_loja && $valor_compra >= 100){
+            $valor_frete = 25;
+        }else{
+            $recebeu_desconto_frete = false;
         }
     ?>
 
