@@ -12,7 +12,9 @@
             <h1>Conversor de Moedas 2.0</h1>
             <?php 
                 $reais = $_POST['conversor']; // coleta o que o usuário enviou através do forms
-                $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2707-02-2025%27&@dataFinalCotacao=%2707-09-2025%27&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao'; // url da api do banco central
+                $inicio = date("m-d-Y", strtotime("-7 days"));
+                $fim = date("m-d-Y");
+                $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\''. $inicio .'\'&@dataFinalCotacao=\''. $fim .'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao'; // url da api do banco central
 
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_URL, $url);
