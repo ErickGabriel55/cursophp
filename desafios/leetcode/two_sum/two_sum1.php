@@ -3,9 +3,9 @@
         function twoSum($nums, $target){
             /*$numeros = $nums;
             $resultado = $target;*/
-            for ($i=0; $i < count($nums); $i++){
+            for ($i = 0; $i < count($nums); $i++){
                 /*echo "a variavel i é $i";*/
-                for ($t= $i + 1; $t < count($nums); $t){
+                for ($t = $i + 1; $t < count($nums); $t){
                     /*echo "a variavel t é $t";*/
                     if ($nums[$t] + $nums[$i] == $target){
                         return [$i, $t];
