@@ -8,6 +8,7 @@
 <body>
     <main>
         <section>
+            <h1>Arrays sequencial e Array associativo</h1>
             <?php 
                 // Arrays sequencias/numericos
                 /* $listas_frutas = ['Banana', 'Maçã', 'Pera', 'Maracujá', 'Goiaba'];

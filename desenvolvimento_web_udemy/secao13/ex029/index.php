@@ -26,8 +26,6 @@
                 echo $listas_coisas['frutas'][3];
                 echo '<br>';
                 echo $listas_coisas['pessoas'][2];
-
-
             ?>
         </section>
     </main>
