@@ -16,18 +16,45 @@
 
                 $funcionario1 = null;
                 $funcionario2 = '';
+                $funcionario3 = false;
 
                 // valores null
-                if (empty($funcionario1)) {
-                    echo 'sim, a variável é vazia';
+                if (is_null($funcionario1)) {
+                    echo '<br>sim, a variável é null';
                 }else {
-                    echo 'não, a variável não é vazia';
+                    echo '<br>não, a variável não é null';
+                }
+
+                if (is_null($funcionario2)) {
+                    echo '<br>sim, a variável é null';
+                }else {
+                    echo '<br>não, a variável não é null';
+                }
+
+                // valores empty
+                if (empty($funcionario1)) {
+                    echo '<br>sim, a variável é vazia';
+                }else {
+                    echo '<br>não, a variável não é vazia';
                 }
 
                 if (empty($funcionario2)) {
                     echo '<br>sim, a variável é vazia';
                 }else {
                     echo '<br>não, a variável não é vazia';
+                }
+
+                // valores falsos
+                if (is_null($funcionario3)) {
+                    echo '<br>sim, a variável é do tipo false';
+                }else {
+                    echo '<br>não, a variável não é do tipo false';
+                }
+
+                if (empty($funcionario2)) {
+                    echo '<br>sim, a variável é do tipo false';
+                }else {
+                    echo '<br>não, a variável não é tipo false';
                 }
 
             ?>
