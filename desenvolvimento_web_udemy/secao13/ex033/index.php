@@ -9,9 +9,17 @@
 <body>
     <main>
         <section>
+            <p>No curso foi feito a parte 1 onde falava sobre a parte teórica dos loops por isso essa é a parte 2.</p>
             <h1>Loops Parte 2 - While</h1>
             <?php 
-
+                // A condição (que fica nos parenteses) pode ser feita através dos operadores lógicos/comparação
+                $num = 0;
+                echo '-- Início do Loop --' . '<br>';
+                while($num < 50){
+                    echo "$num <br>";
+                    $num += 5; // Critério de Parada
+                }
+                echo '-- Fim  do Loop --';
             ?>
         </section>
     </main>
