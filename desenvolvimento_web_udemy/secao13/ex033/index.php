@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops parte 2 - while</title>
+    <title>Loops Parte 2 - While</title>
     <link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
@@ -13,11 +13,18 @@
             <h1>Loops Parte 2 - While</h1>
             <?php 
                 // A condição (que fica nos parenteses) pode ser feita através dos operadores lógicos/comparação
-                $num = 0;
+                $num = 1;
                 echo '-- Início do Loop --' . '<br>';
-                while($num < 50){
+                while($num < 10){
+                    $num += 1; // Critério de Parada
+                    if($num == 2 || $num == 6){
+                        continue;
+                    }
                     echo "$num <br>";
-                    $num += 5; // Critério de Parada
+
+                    // if($num > 100){
+                    //     break;
+                    // }
                 }
                 echo '-- Fim  do Loop --';
             ?>
