@@ -1,0 +1,2 @@
+# Enunciado da Atividade
+<p>1) Crie um script capaz de produzir, atraves de um laco de repeticao, um array com 6 elementos numéricos aleatórios entre 1 e 60, simulando o funcionamento do sorteio da mega sena. Atente-se ao fato de que os numeros aleatorios contidos dentro do array nao podem ser repetidos.</p>
